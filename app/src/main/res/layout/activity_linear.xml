@@ -5,33 +5,74 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     tools:context=".linear.LinearActivity">
 
-    <view class="android.widget.LinearLayout"
-        android:layout_width="0dp"
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#006600"/>
+        android:background="#006600"
+        android:gravity="start">
 
-    <view class="android.widget.LinearLayout"
-        android:layout_width="0dp"
+
+        <View
+            android:layout_width="26dp"
+            android:layout_height="244dp"
+            android:background="#FF0"
+            android:layout_marginEnd="16dp"/>
+
+        <View
+            android:layout_width="26dp"
+            android:layout_height="244dp"
+            android:background="#FF0" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
         android:background="#FFFFFF"
         android:gravity="center"> <!--Se usa para poner el view en medio -->
+       <!--
         <View
         android:id="@+id/circulo"
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:background="@drawable/img" />
-        </view>
+        </view> -->
+        <View
+            android:layout_width="26dp"
+            android:layout_height="244dp"
+            android:background="#FF0"
+            android:layout_marginEnd="16dp"/>
 
-    <view class="android.widget.LinearLayout"
-        android:layout_width="0dp"
+        <View
+            android:layout_width="26dp"
+            android:layout_height="244dp"
+            android:background="#FF0" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:layout_weight="1"
-        android:background="#FF0000"/>
+        android:background="#FF0000"
+        android:gravity="end">
+
+        <View
+            android:layout_width="26dp"
+            android:layout_height="244dp"
+            android:background="#FF0"
+            android:layout_marginEnd="16dp"/>
+
+        <View
+            android:layout_width="26dp"
+            android:layout_height="244dp"
+            android:background="#FF0" />
+
+    </LinearLayout>
 
 <!-- Hola -->
 
