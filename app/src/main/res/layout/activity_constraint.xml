@@ -8,50 +8,90 @@
     tools:context=".constraint.ConstraintActivity">
 
 
+    <!-- Color Verde -->
     <View
-        android:id="@+id/linea_verde"
-        android:layout_width="0dp"
+        android:id="@+id/verde"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="#006600"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toStartOf="@id/linea_blanca"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintWidth_percent="0.33" />
+        app:layout_constraintBottom_toTopOf="@id/blanco"
+        app:layout_constraintHeight_percent="0.33"/>
+    <!--Bandas en color verde -->
+    <View
+        android:layout_width="26dp"
+        android:layout_height="244dp"
+        android:background="#FF0"
+        app:layout_constraintBottom_toTopOf="@id/blanco"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="47dp" />
 
 
     <View
-        android:id="@+id/linea_blanca"
-        android:layout_width="0dp"
+        android:layout_width="26dp"
+        android:layout_height="244dp"
+        android:background="#FF0"
+        app:layout_constraintBottom_toTopOf="@id/blanco"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        tools:layout_editor_absoluteX="0dp" />
+    <!-- Color Blanco -->
+    <View
+        android:id="@+id/blanco"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
         android:background="#FFFFFF"
-        app:layout_constraintStart_toEndOf="@id/linea_verde"
-        app:layout_constraintEnd_toStartOf="@id/linea_roja"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintWidth_percent="0.34" />
-
-
-    <ImageView
-        android:id="@+id/circulo"
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:background="@drawable/img"
-        app:layout_constraintBottom_toBottomOf="@id/linea_blanca"
-        app:layout_constraintEnd_toEndOf="@id/linea_blanca"
-        app:layout_constraintHorizontal_bias="0.475"
-        app:layout_constraintStart_toStartOf="@id/linea_blanca"
-        app:layout_constraintTop_toTopOf="@id/linea_blanca"
-        app:layout_constraintVertical_bias="0.499" />
+        app:layout_constraintTop_toBottomOf="@id/verde"
+        app:layout_constraintBottom_toTopOf="@id/rojo"
+        app:layout_constraintHeight_percent="0.34"
+        />
+    <!--Bandas en color blanco -->
+    <View
+        android:layout_width="26dp"
+        android:layout_height="244dp"
+        android:background="#FF0"
+        app:layout_constraintBottom_toTopOf="@id/rojo"
+        app:layout_constraintTop_toBottomOf="@id/verde"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="173dp" />
 
     <View
-        android:id="@+id/linea_roja"
-        android:layout_width="0dp"
+        android:layout_width="26dp"
+        android:layout_height="244dp"
+        android:background="#FF0"
+        app:layout_constraintBottom_toTopOf="@id/rojo"
+        app:layout_constraintTop_toBottomOf="@id/verde"
+        app:layout_constraintVertical_bias="1.0"
+        tools:layout_editor_absoluteX="235dp" />
+
+    <!-- Rojo -->
+    <View
+        android:id="@+id/rojo"
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:background="#FF0000"
-        app:layout_constraintStart_toEndOf="@id/linea_blanca"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
+        android:background="#CE1126"
+        app:layout_constraintTop_toBottomOf="@id/blanco"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintWidth_percent="0.33" />
+        app:layout_constraintHeight_percent="0.33"/>
+
+    <View
+        android:layout_width="26dp"
+        android:layout_height="244dp"
+        android:layout_marginEnd="48dp"
+        android:background="#FF0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/blanco"
+        app:layout_constraintVertical_bias="0.666" />
+
+    <View
+        android:layout_width="26dp"
+        android:layout_height="244dp"
+        android:background="#FF0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/blanco"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
